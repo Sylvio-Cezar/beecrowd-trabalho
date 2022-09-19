@@ -9,8 +9,8 @@ public class areaPoligonos {
         do {
             System.out.println("==== Digite o número referente ao cálculo de área desejado ====");
             System.out.println("Opção 1: Quadrado");
-            System.out.println("Opção 2: Triângulo equilátero");
-            System.out.println("Opção 3: Retângulo");
+            System.out.println("Opção 2: Triângulo retângulo");
+            System.out.println("Opção 3: Hexágono regular");
             System.out.println("Opção 4: Trapézio");
             System.out.println("Opção 9: Sair\n");
             opcao = scan.nextInt();
@@ -35,12 +35,10 @@ public class areaPoligonos {
                     System.out.println("A área do triângulo retângulo é igual a: " + resultado + "\n");
                     break;
                 case 3:
-                    System.out.println("Digite a medida da base:");
+                    System.out.println("Digite a medida dos lados:");
                     base = scan.nextFloat();
-                    System.out.println("Digite a medida da altura:");
-                    altura = scan.nextFloat();
-                    resultado = base * altura;
-                    System.out.println("A área do retângulo é igual a: " + resultado + "\n");
+                    resultado = (float) ((3 * (base * base) * Math.sqrt(3)) / 2);
+                    System.out.println("A área do hexágono regular é igual a: " + resultado + "\n");
                     break;
                 case 4:
                     System.out.println("Digite a medida da base maior:");
