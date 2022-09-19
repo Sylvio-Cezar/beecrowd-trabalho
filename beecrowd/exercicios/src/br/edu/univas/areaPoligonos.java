@@ -1,11 +1,10 @@
 package br.edu.univas;
-
 import java.util.Scanner;
 
 public class areaPoligonos {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int opcao = 0;
+        int opcao;
 
         do {
             System.out.println("==== Digite o número referente ao cálculo de área desejado ====");
@@ -33,7 +32,7 @@ public class areaPoligonos {
                     System.out.println("Digite a medida da altura:");
                     altura = scan.nextFloat();
                     resultado = (base * altura) / 2;
-                    System.out.println("A área do triângulo equilátero é igual a: " + resultado + "\n");
+                    System.out.println("A área do triângulo retângulo é igual a: " + resultado + "\n");
                     break;
                 case 3:
                     System.out.println("Digite a medida da base:");
